@@ -1,0 +1,38 @@
+###
+
+GET http://localhost:5000/
+
+
+###
+GET http://localhost:5000/api/clients
+
+### 
+POST http://localhost:5000/api/add-client
+Content-Type: application/json
+
+{
+    "name": "qoqo",
+    "email": "vvv@gmail.com",
+    "job": "Tester",
+    "rate": 80.00,
+    "isActive": true
+}
+
+### 
+
+PUT http://localhost:5000/api/update-client/1
+Content-Type: application/json
+
+{
+    "name": "sami",
+    "email": "qreq@gmail.com",
+    "job": "Manager",
+    "rate": 80.00,
+    "isActive": true
+}
+
+###
+PUT http://localhost:5000/api/delete/3
+
+###
+GET http://localhost:5000/api/clients/search?searchTerm=Developer
